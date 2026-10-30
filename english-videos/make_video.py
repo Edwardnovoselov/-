@@ -80,7 +80,7 @@ class Word:
 
 def load_words(level: str) -> list[Word]:
     words = []
-    for line in (ROOT / "words" / f"{level}.txt").read_text().splitlines():
+    for line in (ROOT / "words" / f"{level}.txt").read_text(encoding="utf-8").splitlines():
         if not line.strip() or line.startswith("#"):
             continue
         en, ipa, ru, w1, w2 = (p.strip() for p in line.split("|"))
@@ -773,9 +773,9 @@ class Video:
 
     # --- фоновые клипы
     def plan_background(self) -> list[dict]:
-        clips = json.loads((ROOT / "bg" / "clips.json").read_text())
+        clips = json.loads((ROOT / "bg" / "clips.json").read_text(encoding="utf-8"))
         allowed = []
-        for ln in (ROOT / "bg" / "curated.txt").read_text().splitlines():
+        for ln in (ROOT / "bg" / "curated.txt").read_text(encoding="utf-8").splitlines():
             vid = ln.split("#")[0].strip()
             if vid and vid in clips and (ROOT / "bg" / "clips" / f"{vid}.mp4").exists():
                 allowed.append(vid)
@@ -875,7 +875,7 @@ class Video:
         if proc.wait() != 0:
             raise RuntimeError("ffmpeg завершился с ошибкой")
         wav.unlink()
-        out.with_suffix(".txt").write_text(self.caption())
+        out.with_suffix(".txt").write_text(self.caption(), encoding="utf-8")
         ad = ""
         if self.banner:
             inside = self.banner_t0 <= self.duration / 2 <= self.banner_t0 + self.banner_len

@@ -7,13 +7,14 @@ Mixkit License: бесплатно, в том числе для коммерче
 """
 import html
 import json
+import os
 import re
 import sys
 import time
 import urllib.request
 from pathlib import Path
 
-CA = "/root/.ccr/ca-bundle.crt"
+CA = os.environ.get("SSL_CERT_FILE")  # свой CA нужен только за прокси; иначе системные сертификаты
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
 ROOT = Path(__file__).parent
 BG = ROOT / "bg"
@@ -103,7 +104,7 @@ def catalog(vertical_pages: int = 31, category_pages: int = 4) -> None:
     for it in items:
         text = f'{it["title"]} {it["desc"]}'
         it["landscape"] = bool(GOOD.search(text)) and not BAD.search(text)
-    CATALOG.write_text(json.dumps(items, ensure_ascii=False, indent=1))
+    CATALOG.write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"saved {len(items)} items, landscapes: {sum(i['landscape'] for i in items)}")
 
 
@@ -115,7 +116,7 @@ def hd_url(item: dict) -> str:
 
 
 def download(ids: list[str]) -> None:
-    by_id = {i["id"]: i for i in json.loads(CATALOG.read_text())}
+    by_id = {i["id"]: i for i in json.loads(CATALOG.read_text(encoding="utf-8"))}
     out = BG / "clips"
     out.mkdir(parents=True, exist_ok=True)
     for vid in ids:
@@ -137,5 +138,5 @@ if __name__ == "__main__":
         catalog()
     elif cmd == "download":
         # ids из bg/curated.txt (по одному в строке, после # — комментарий)
-        lines = (BG / "curated.txt").read_text().splitlines()
+        lines = (BG / "curated.txt").read_text(encoding="utf-8").splitlines()
         download([ln.split("#")[0].strip() for ln in lines if ln.split("#")[0].strip()])

@@ -22,6 +22,8 @@
 
 ## Запуск
 
+Нужны Python 3.10+ и ffmpeg. Пошагово для Windows и полный контекст проекта: `CLAUDE.md`.
+
 ```bash
 pip install edge-tts numpy pillow
 export SSL_CERT_FILE=/путь/к/ca-bundle.crt     # только если сеть за прокси с собственным CA
