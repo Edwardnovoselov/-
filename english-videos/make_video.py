@@ -48,8 +48,10 @@ VOICE_EN = "en-GB-SoniaNeural"
 BANNER = ROOT / "assets" / "banner.mp4"
 BANNER_SPEED = 1.3
 BANNER_KEY = "colorkey=0x00FE00:0.30:0.08,despill=type=green"
+BANNER_H = 486  # 25.3% площади кадра (правило: не менее 25%), края по ширине обрезаются
 BANNER_GAIN_DB = 7.0  # исходник тихий (−25 LUFS): подтягиваем к громкости озвучки
 BANNER_PAD_IN, BANNER_PAD_OUT = 0.3, 0.35  # тишина до и после баннера
+BANNER_OPEN_IN, BANNER_OPEN_OUT = 0.9, 0.6  # столько секунд от краёв баннер раскрывается и закрывается: сюда середина ролика не попадает
 
 DISPLAY_XB = FONTS / "InterDisplay-ExtraBold.otf"
 DISPLAY_B = FONTS / "InterDisplay-Bold.otf"
@@ -576,27 +578,24 @@ class Video:
         self.label = make_label("Переведи на английский" if fmt == "cards" else "Выбери правильный перевод")
         self.headers: dict[int, Image.Image] = {}
         self.banner_after = None
+        self.banner_tail = 0.0
         self.build()
         if banner:
             # баннер ставим на границу слов, ближайшую к середине итогового ролика,
-            # так что середина ролика всегда попадает внутрь баннера
+            # так что на середину ролика всегда приходится полностью открытый баннер
             self.banner_len = media_duration(banner) / BANNER_SPEED
             plain = self.duration
 
             def placement(k: int) -> tuple[float, float]:
-                """Самая короткая пауза перед баннером, при которой середина ролика попадает в баннер
-                с запасом 0.5 с от краёв; второе значение — промах (0, если условие выполнено)."""
-                end, L, margin = self.items[k].end, self.banner_len, 0.5
-                lo = max(BANNER_PAD_IN, plain - L + BANNER_PAD_OUT - 2 * end + 2 * margin)
-                hi = min(1.6, plain + L + BANNER_PAD_OUT - 2 * end - 2 * margin)
-                pad = lo if lo <= hi else clamp(plain + BANNER_PAD_OUT - 2 * end, BANNER_PAD_IN, 1.6)
-                center = end + pad + L / 2
-                middle = (plain + pad + L + BANNER_PAD_OUT) / 2
-                miss = 0.0 if lo <= hi else abs(center - middle)
-                return pad, miss
+                """Пауза перед баннером и продление финала, при которых середина ролика попадает
+                в открытый баннер. Пауза сдвигает баннер позже середины, продление — середину позже баннера."""
+                L = self.banner_len
+                gap = plain + L + BANNER_PAD_OUT - 2 * self.items[k].end  # 2 × (середина − начало баннера) без паузы
+                pad = max(BANNER_PAD_IN, gap - 2 * (L - BANNER_OPEN_OUT))
+                return pad, max(0.0, 2 * BANNER_OPEN_IN - (gap - pad))
 
-            self.banner_after = min(range(1, len(self.items) - 1), key=lambda k: (placement(k)[1], placement(k)[0]))
-            self.banner_pad = placement(self.banner_after)[0]
+            self.banner_after = min(range(1, len(self.items) - 1), key=lambda k: sum(placement(k)))
+            self.banner_pad, self.banner_tail = placement(self.banner_after)
             self.mix = Mixer()
             self.build()
 
@@ -651,7 +650,7 @@ class Video:
         self.end_card, self.end_pill = make_end_card(title, "Напиши в комментариях", self.color)
         outro = tts(f"{title} Напиши в комментариях!", VOICE_RU)
         self.mix.add(t + 0.15, outro)
-        self.duration = t + max(2.8, 0.15 + len(outro) / SR + 0.6)
+        self.duration = t + max(2.8, 0.15 + len(outro) / SR + 0.6) + self.banner_tail
 
     # --- фон
     def header(self, idx: int) -> Image.Image:
@@ -843,7 +842,7 @@ class Video:
         if self.banner:
             parts.append(
                 f"[{ov + 2}:v]setpts=(PTS-STARTPTS)/{BANNER_SPEED}+{self.banner_t0:.3f}/TB,fps={FPS},format=rgba,"
-                f"{BANNER_KEY},scale={W}:-2:flags=lanczos,format=yuva420p[bn]"
+                f"{BANNER_KEY},scale=-2:{BANNER_H}:flags=lanczos,crop='min(iw,{W})':{BANNER_H},format=yuva420p[bn]"
             )
             parts.append(f"[bg][{ov}:v]overlay=format=auto:shortest=1[ui]")
             parts.append("[ui][bn]overlay=x=(W-w)/2:y=(H-h)/2:eof_action=pass:format=auto,format=yuv420p[v]")
@@ -878,7 +877,8 @@ class Video:
         out.with_suffix(".txt").write_text(self.caption(), encoding="utf-8")
         ad = ""
         if self.banner:
-            inside = self.banner_t0 <= self.duration / 2 <= self.banner_t0 + self.banner_len
+            phase = self.duration / 2 - self.banner_t0
+            inside = BANNER_OPEN_IN - 0.01 <= phase <= self.banner_len - BANNER_OPEN_OUT + 0.01
             ad = f", баннер {self.banner_t0:.1f}–{self.banner_t0 + self.banner_len:.1f} c" + ("" if inside else " НЕ В СЕРЕДИНЕ")
         print(f"готово: {out} ({self.duration:.1f} c{ad}, фоны: {', '.join(s['id'] for s in segs)})")
 
