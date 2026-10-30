@@ -1,0 +1,93 @@
+# english | IPA (британская) | русский | ловушка 1 | ловушка 2
+success | səkˈses | успех | access | progress
+advice | ədˈvaɪs | совет | device | advise
+future | ˈfjuːtʃə | будущее | feature | past
+environment | ɪnˈvaɪrənmənt | окружающая среда | equipment | entertainment
+disappointed | ˌdɪsəˈpɔɪntɪd | разочарованный | disgusted | surprised
+possible | ˈpɒsəbl | возможный | probable | impossible
+achievement | əˈtʃiːvmənt | достижение | agreement | improvement
+skill | skɪl | навык | skin | knowledge
+memory | ˈmeməri | память | mention | thought
+neighbour | ˈneɪbə | сосед | stranger | relative
+opinion | əˈpɪnjən | мнение | option | decision
+explain | ɪkˈspleɪn | объяснять | complain | explore
+crowd | kraʊd | толпа | cloud | queue
+noise | nɔɪz | шум | nose | voice
+silence | ˈsaɪləns | тишина | science | balance
+choice | tʃɔɪs | выбор | voice | chance
+poverty | ˈpɒvəti | бедность | property | wealth
+behaviour | bɪˈheɪvjə | поведение | belief | habit
+confident | ˈkɒnfɪdənt | уверенный | confidential | comfortable
+improve | ɪmˈpruːv | улучшать | prove | approve
+avoid | əˈvɔɪd | избегать | allow | afford
+obvious | ˈɒbviəs | очевидный | previous | curious
+reason | ˈriːzn | причина | result | season
+experience | ɪkˈspɪəriəns | опыт | experiment | expression
+generous | ˈdʒenərəs | щедрый | general | gentle
+truth | truːθ | правда | trust | proof
+argue | ˈɑːɡjuː | спорить | agree | arrange
+realise | ˈrɪəlaɪz | осознавать | release | recognise
+condition | kənˈdɪʃn | состояние, условие | position | solution
+suggest | səˈdʒest | предлагать (идею) | succeed | support
+ability | əˈbɪləti | способность | activity | quality
+accept | əkˈsept | принимать (соглашаться) | except | expect
+afford | əˈfɔːd | позволить себе | effort | offer
+amazing | əˈmeɪzɪŋ | потрясающий | amusing | annoying
+annoyed | əˈnɔɪd | раздражённый | anxious | amused
+appreciate | əˈpriːʃieɪt | ценить | apologise | participate
+attempt | əˈtempt | попытка | attend | attack
+aware | əˈweə | осведомлённый | award | away
+benefit | ˈbenɪfɪt | польза, выгода | budget | belief
+challenge | ˈtʃælɪndʒ | вызов (трудная задача) | change | chance
+consider | kənˈsɪdə | рассматривать | consist | confirm
+customer | ˈkʌstəmə | покупатель, клиент | costume | cashier
+damage | ˈdæmɪdʒ | ущерб | danger | image
+deny | dɪˈnaɪ | отрицать | delay | define
+deserve | dɪˈzɜːv | заслуживать | reserve | observe
+disease | dɪˈziːz | болезнь | disaster | distance
+doubt | daʊt | сомнение | debt | fault
+effort | ˈefət | усилие | effect | afford
+entire | ɪnˈtaɪə | весь, целый | entry | empire
+exhausted | ɪɡˈzɔːstɪd | измотанный | excited | amused
+expect | ɪkˈspekt | ожидать | accept | except
+fault | fɔːlt | вина | false | fate
+frequent | ˈfriːkwənt | частый | fragrant | friendly
+guilty | ˈɡɪlti | виноватый | gifted | gloomy
+greedy | ˈɡriːdi | жадный | needy | grateful
+grateful | ˈɡreɪtfl | благодарный | graceful | careful
+however | haʊˈevə | однако | whatever | moreover
+influence | ˈɪnfluəns | влияние | insurance | intelligence
+intend | ɪnˈtend | намереваться | attend | pretend
+jealous | ˈdʒeləs | ревнивый | zealous | joyful
+knowledge | ˈnɒlɪdʒ | знание | college | language
+lack | læk | нехватка | luck | lake
+manage | ˈmænɪdʒ | справляться | marriage | message
+mention | ˈmenʃn | упоминать | mansion | motion
+obey | əˈbeɪ | слушаться, подчиняться | obtain | allow
+opportunity | ˌɒpəˈtjuːnəti | возможность | community | obscurity
+patient | ˈpeɪʃnt | терпеливый | patent | passionate
+permission | pəˈmɪʃn | разрешение | mission | profession
+pleasant | ˈpleznt | приятный | peasant | present
+pretend | prɪˈtend | притворяться | prevent | extend
+prevent | prɪˈvent | предотвращать | present | invent
+proud | praʊd | гордый | loud | brave
+purpose | ˈpɜːpəs | цель | propose | purchase
+regret | rɪˈɡret | сожалеть | regard | repeat
+reliable | rɪˈlaɪəbl | надёжный | relieved | readable
+remind | rɪˈmaɪnd | напоминать | remain | remember
+rent | rent | снимать (жильё) | rest | sell
+respect | rɪˈspekt | уважение | aspect | suspect
+responsible | rɪˈspɒnsəbl | ответственный | reasonable | possible
+satisfied | ˈsætɪsfaɪd | довольный | terrified | qualified
+scared | skeəd | напуганный | sacred | scarce
+solution | səˈluːʃn | решение (проблемы) | pollution | situation
+strict | strɪkt | строгий | strike | district
+succeed | səkˈsiːd | добиться успеха | exceed | proceed
+tough | tʌf | трудный, жёсткий | touch | though
+trust | trʌst | доверять | trace | rust
+unfortunately | ʌnˈfɔːtʃənətli | к сожалению | fortunately | unlikely
+valuable | ˈvæljuəbl | ценный | visible | portable
+vehicle | ˈviːəkl | транспортное средство | venue | vessel
+warn | wɔːn | предупреждать | warm | worn
+wealth | welθ | богатство | health | weather
+worth | wɜːθ | стоящий | worse | width

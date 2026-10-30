@@ -1,0 +1,5 @@
+bg/clips/
+cache/
+out/
+__pycache__/
+*.log

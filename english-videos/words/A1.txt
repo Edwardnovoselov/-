@@ -1,0 +1,121 @@
+# english | IPA (британская) | русский | ловушка 1 | ловушка 2
+apple | ˈæpl | яблоко | orange | lemon
+house | haʊs | дом | room | street
+friend | frend | друг | brother | guest
+water | ˈwɔːtə | вода | milk | juice
+dog | dɒɡ | собака | cat | horse
+book | bʊk | книга | page | letter
+city | ˈsɪti | город | village | country
+morning | ˈmɔːnɪŋ | утро | evening | night
+beautiful | ˈbjuːtɪfl | красивый | ugly | expensive
+happy | ˈhæpi | счастливый | sad | angry
+big | bɪɡ | большой | small | long
+cold | kəʊld | холодный | hot | warm
+drink | drɪŋk | пить | eat | cook
+sleep | sliːp | спать | wake | rest
+buy | baɪ | покупать | sell | pay
+teacher | ˈtiːtʃə | учитель | student | doctor
+window | ˈwɪndəʊ | окно | door | wall
+weather | ˈweðə | погода | season | weekend
+today | təˈdeɪ | сегодня | tomorrow | yesterday
+always | ˈɔːlweɪz | всегда | never | often
+tree | triː | дерево | flower | grass
+sun | sʌn | солнце | moon | star
+bread | bred | хлеб | butter | cheese
+money | ˈmʌni | деньги | price | bank
+clothes | kləʊðz | одежда | shoes | hat
+hungry | ˈhʌŋɡri | голодный | thirsty | tired
+family | ˈfæməli | семья | parents | children
+question | ˈkwestʃən | вопрос | answer | lesson
+kitchen | ˈkɪtʃɪn | кухня | bedroom | bathroom
+ticket | ˈtɪkɪt | билет | passport | seat
+river | ˈrɪvə | река | lake | sea
+expensive | ɪkˈspensɪv | дорогой | cheap | free
+learn | lɜːn | учить, изучать | teach | read
+holiday | ˈhɒlədeɪ | отпуск, каникулы | weekend | trip
+cat | kæt | кошка | dog | mouse
+car | kɑː | машина | bus | card
+school | skuːl | школа | class | pool
+table | ˈteɪbl | стол | chair | bed
+door | dɔː | дверь | floor | wall
+milk | mɪlk | молоко | tea | juice
+egg | eɡ | яйцо | leg | meat
+fish | fɪʃ | рыба | meat | dish
+green | ɡriːn | зелёный | grey | yellow
+white | waɪt | белый | black | wide
+new | njuː | новый | now | old
+young | jʌŋ | молодой | old | strong
+fast | fɑːst | быстрый | slow | last
+easy | ˈiːzi | лёгкий, несложный | difficult | early
+hot | hɒt | горячий | hat | warm
+name | neɪm | имя | age | game
+night | naɪt | ночь | light | day
+week | wiːk | неделя | weak | month
+year | jɪə | год | hour | ear
+shop | ʃɒp | магазин | ship | market
+street | striːt | улица | road | square
+bed | bed | кровать | bad | sofa
+room | ruːm | комната | roof | flat
+mother | ˈmʌðə | мама | father | other
+sister | ˈsɪstə | сестра | brother | daughter
+son | sʌn | сын | sun | soon
+daughter | ˈdɔːtə | дочь | doctor | sister
+breakfast | ˈbrekfəst | завтрак | lunch | dinner
+sugar | ˈʃʊɡə | сахар | salt | flour
+rain | reɪn | дождь | snow | train
+winter | ˈwɪntə | зима | summer | autumn
+sea | siː | море | see | lake
+mountain | ˈmaʊntɪn | гора | hill | fountain
+flower | ˈflaʊə | цветок | flour | tree
+bird | bɜːd | птица | bear | board
+horse | hɔːs | лошадь | house | cow
+open | ˈəʊpən | открывать | oven | shut
+write | raɪt | писать | right | read
+speak | spiːk | говорить | listen | sing
+listen | ˈlɪsn | слушать | hear | watch
+walk | wɔːk | гулять | work | run
+swim | swɪm | плавать | fly | jump
+sing | sɪŋ | петь | dance | sign
+want | wɒnt | хотеть | went | need
+like | laɪk | нравиться | lake | love
+know | nəʊ | знать | now | think
+help | help | помогать | hold | hope
+wait | weɪt | ждать | weight | want
+come | kʌm | приходить | become | go
+give | ɡɪv | давать | live | take
+find | faɪnd | находить | fine | lose
+busy | ˈbɪzi | занятой | easy | lazy
+tired | ˈtaɪəd | уставший | tidy | sick
+rich | rɪtʃ | богатый | poor | reach
+clean | kliːn | чистый | clear | dirty
+dark | dɑːk | тёмный | park | light
+left | left | левый | right | lift
+near | nɪə | рядом, близко | far | next
+here | hɪə | здесь | hear | there
+shoes | ʃuːz | обувь | socks | shirt
+bag | bæɡ | сумка | bug | box
+key | kiː | ключ | lock | knee
+sky | skaɪ | небо | ski | cloud
+boy | bɔɪ | мальчик | buy | girl
+woman | ˈwʊmən | женщина | women | man
+people | ˈpiːpl | люди | purple | person
+word | wɜːd | слово | world | work
+start | stɑːt | начинать | star | stop
+fruit | fruːt | фрукты | food | vegetables
+meat | miːt | мясо | meet | fish
+cup | kʌp | чашка | cap | glass
+pen | pen | ручка | pan | pencil
+garden | ˈɡɑːdn | сад | garage | park
+hospital | ˈhɒspɪtl | больница | hostel | hotel
+country | ˈkʌntri | страна | county | city
+language | ˈlæŋɡwɪdʒ | язык (речь) | luggage | lesson
+homework | ˈhəʊmwɜːk | домашнее задание | housework | lesson
+tall | tɔːl | высокий (о человеке) | tail | short
+funny | ˈfʌni | смешной | sunny | fun
+angry | ˈæŋɡri | злой, сердитый | hungry | happy
+favourite | ˈfeɪvərɪt | любимый | famous | flavour
+dress | dres | платье | address | skirt
+understand | ˌʌndəˈstænd | понимать | stand | know
+ask | ɑːsk | спрашивать | answer | tell
+birthday | ˈbɜːθdeɪ | день рождения | Thursday | weekend
+picture | ˈpɪktʃə | картина, рисунок | mixture | mirror
